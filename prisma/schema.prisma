@@ -48,8 +48,7 @@ model Product {
   categoryId Int
   category   Category @relation(fields: [categoryId], references: [id])
 
-  variations ProductVariation[]
-
+  variations  ProductVariation[]
   ingredients Ingredient[]
 
   createdAt DateTime @default(now())
